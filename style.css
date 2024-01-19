@@ -1,0 +1,249 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    overflow: hidden;
+}
+@keyframes backgroundChange {
+    0%   { background-color: #6e8efb; }
+    25%  { background-color: #a777e3; }
+    50%  { background-color: #e377a7; }
+    75%  { background-color: #77e3a4; }
+    100% { background-color: #6e8efb; }
+}
+
+body {
+    animation: backgroundChange 10s infinite alternate;
+}
+
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+@keyframes backgroundChange {
+    0%   { background-color: #6e8efb; }
+    25%  { background-color: #a777e3; }
+    50%  { background-color: #e377a7; }
+    75%  { background-color: #77e3a4; }
+    100% { background-color: #6e8efb; }
+}
+
+body {
+    animation: backgroundChange 10s infinite alternate;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.header, .footer {
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+/* Animasi masuk */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.story-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+/* ... Other styles ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* ... */
+}
+
+/* ... Existing styles ... */
+
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    background-image: url('confetti.png'); /* Pastikan Anda memiliki gambar confetti yang sesuai */
+    background-size: cover;
+    display: none;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Animasi dan efek tambahan untuk galeri dan elemen lainnya */
+/* ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* ... */
+}
+/* ... Existing styles ... */
+
+#particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Animasi partikel */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffdd57;
+    opacity: 0.7;
+    animation: moveParticles 10s linear infinite;
+}
+
+@keyframes moveParticles {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-1000px) translateX(100px); }
+}
+
+/* Animasi tambahan untuk elemen lainnya */
+/* ... */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.gallery-item {
+    width: 150px; /* Atur lebar sesuai kebutuhan */
+    height: 150px; /* Atur tinggi sesuai kebutuhan */
+    object-fit: cover; /* Untuk memastikan foto tidak terdistorsi */
+    border-radius: 10px; /* Untuk tampilan yang lebih halus */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+/* Efek parallax pada background */
+.background-overlay {
+    /* ... */
+    background-attachment: fixed;
+}
+
+/* Style untuk lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Perbaiki animasi hover pada foto */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.intro {
+    font-size: 1.1em; /* Ukuran font */
+    color: #353535; /* Warna teks */
+    line-height: 1.6; /* Jarak antar baris */
+    text-align: justify; /* Rata kiri-kanan */
+    padding: 15px; /* Jarak dalam */
+    margin: 20px 0; /* Jarak luar */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang */
+    border-radius: 10px; /* Sudut bulat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Efek bayangan */
+    transition: all 0.3s ease-in-out; /* Transisi animasi */
+}
+
+/* Efek hover */
+.intro:hover {
+    transform: scale(1.02); /* Sedikit membesar */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Bayangan lebih besar */
+}
+
+/* Animasi muncul */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.intro {
+    animation: fadeIn 1s ease-out;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 5px 0;
+}

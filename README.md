@@ -1,8 +1,5 @@
 # Tentang-Kami
 
-
-Tentu! Saya akan membuat README Anda lebih menarik dan santai:
-
 🌟 Kisah Kami - Sebuah Journey Cinta yang Unik 🌟
 🚀 Yo, Selamat Datang di Dunia Kami!
 Hey there! Selamat datang di "Kisah Kami," sebuah petualangan digital yang nggak cuma sekadar web. Ini adalah cerita nyata tentang dua gamer yang ketemu di dunia maya dan bermimpi bersama di dunia nyata. Siap-siap dibawa ke rollercoaster perasaan dengan cerita, foto, dan animasi yang bikin mata kamu nggak mau kedip!
